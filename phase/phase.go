@@ -1,10 +1,7 @@
 package phase
 
 import (
-	"Go10/deck"
 	"Go10/player"
-	"image/color"
-	"log"
 )
 
 type Phases []Phasing
@@ -48,23 +45,19 @@ type Two struct{}
 func (Two) Check(hand player.Hand, usWild ...string) bool {
 	pass1, hand := hand.SetCount(1, usWild...)
 
-	wCount := 0
+	/*wCount := 0
 
 	if len(usWild) > 0 && len(usWild) <= wCount {
 		for _, c := range usWild {
 			hand = append(hand,
 				deck.Card{
 					Name: c,
-					Color: color.RGBA64{},
+					Color: map[string]color.RGBA64{},
 				})
 		}
-	}
+	}*/
 
-	log.Println(hand)
-
-	pass2, hand := hand.RunCount(1, 4)
-
-	log.Println(hand)
+	pass2, hand := hand.RunCount(1)
 
 	return pass1 && pass2
 }

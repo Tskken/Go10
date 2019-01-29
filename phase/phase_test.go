@@ -2,7 +2,6 @@ package phase
 
 import (
 	"Go10/deck"
-	"image/color"
 	"testing"
 )
 
@@ -14,27 +13,27 @@ func TestOne_Check(t *testing.T) {
 	hand = append(hand,
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "2",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "2",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "wild",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		)
 
@@ -53,7 +52,7 @@ func TestOne_Check(t *testing.T) {
 	hand = append(hand,
 		deck.Card{
 			Name: "3",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 	)
 
@@ -66,7 +65,7 @@ func TestOne_Check(t *testing.T) {
 	hand = append(hand,
 		deck.Card{
 			Name: "wild",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		)
 
@@ -99,31 +98,31 @@ func TestOne_Check(t *testing.T) {
 	hand2 = append(hand2,
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "2",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "3",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "wild",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "wild",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 	)
 
@@ -148,11 +147,11 @@ func TestOne_Check(t *testing.T) {
 	hand2 = append(hand2,
 		deck.Card{
 			Name:"skip",
-			Color:color.RGBA64{},
+			Color:deck.Color{},
 		},
 		deck.Card{
 			Name:"wild",
-			Color:color.RGBA64{},
+			Color:deck.Color{},
 		})
 
 	t.Run("Check for 3 wild for non existing numbers", func(t *testing.T) {
@@ -171,7 +170,7 @@ func TestOne_Check(t *testing.T) {
 	hand2 = append(hand2,
 		deck.Card{
 			Name:"1",
-			Color:color.RGBA64{},
+			Color:deck.Color{},
 		})
 
 	t.Run("Base check 3", func(t *testing.T) {
@@ -191,31 +190,31 @@ func TestTwo_Check(t *testing.T) {
 	hand = append(hand,
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "1",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "2",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "3",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "4",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 		deck.Card{
 			Name: "wild",
-			Color: color.RGBA64{},
+			Color: deck.Color{},
 		},
 	)
 

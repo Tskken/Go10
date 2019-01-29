@@ -105,7 +105,7 @@ func (h Hand) SetCount(setCount int, usWild ...string) (bool, Hand) {
 		- Finished run check
  */
 
-func (h Hand) RunCount(runCount, runLength int, usWild ...string) (bool, Hand) {
+func (h Hand) RunCount(runLength int, usWild ...string) (bool, Hand) {
 
 	sort.Sort(h)
 
@@ -124,7 +124,7 @@ func (h Hand) RunCount(runCount, runLength int, usWild ...string) (bool, Hand) {
 			}
 		}
 
-		if count >= runCount {
+		if count >= runLength {
 			log.Println("count matched!!!")
 			return true, h
 		}

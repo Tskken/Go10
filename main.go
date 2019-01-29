@@ -16,17 +16,15 @@ func main() {
 
 	phases := phase.Init()
 
-	hand := make([]deck.Card, 0)
+	for _, p := range phases {
+		hand := make([]deck.Card, 0)
 
-	for i:= 0; i < 50; i++ {
-		hand = append(hand, d.Draw())
+		for i:= 0; i < 10; i++ {
+			hand = append(hand, d.Draw())
+		}
+
+		log.Println(hand)
+
+		log.Println(p.Check(hand))
 	}
-
-	log.Println(hand)
-
-	log.Println(phases[0].Check(hand))
-
-	log.Println(hand)
-
-	log.Println(phases[1].Check(hand))
 }

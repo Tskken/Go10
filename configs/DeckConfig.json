@@ -4,71 +4,85 @@
     {
       "Name": "1",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "2",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "3",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "4",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "5",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "6",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "7",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "8",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "9",
       "Color": true,
+      "Score": 5,
       "Count": 8
     },
     {
       "Name": "10",
       "Color": true,
+      "Score": 10,
       "Count": 8
     },
     {
       "Name": "11",
       "Color": true,
+      "Score": 10,
       "Count": 8
     },
     {
       "Name": "12",
       "Color": true,
+      "Score": 10,
       "Count": 8
     },
     {
       "Name": "wild",
       "Color": false,
+      "Score": 25,
       "Count": 8
     },
     {
       "Name": "skip",
       "Color": false,
+      "Score": 15,
       "Count": 4
     }
   ]

@@ -19,7 +19,7 @@ type Deck struct {
 	Cards []Card
 }
 
-func loadColorData() ([]color.RGBA64, error) {
+func loadColorData() (map[string]color.RGBA64, error) {
 	type Color struct {
 		R uint16
 		G uint16
@@ -57,24 +57,25 @@ func loadColorData() ([]color.RGBA64, error) {
 		log.Println(err)
 	}
 
-	rgbaColors := make([]color.RGBA64, 0, len(colors))
+	rgbaColors := make(map[string]color.RGBA64)
 
 	for _, c := range colors {
-		rgbaColors = append(rgbaColors, color.RGBA64{
+		rgbaColors[c.Name] = color.RGBA64{
 			R: c.Color.R,
 			G: c.Color.G,
 			B: c.Color.B,
 			A: c.Color.A,
-		})
+		}
 	}
 
 	return rgbaColors, nil
 }
 
-func loadConfigData(rgbaColors []color.RGBA64) ([]Card, error) {
+func loadConfigData(rgbaColors map[string]color.RGBA64) ([]Card, error) {
 	type CardType struct {
 		Name  string
 		Color bool
+		Score uint8
 		Count uint8
 	}
 
@@ -111,23 +112,27 @@ func loadConfigData(rgbaColors []color.RGBA64) ([]Card, error) {
 	cards := make([]Card, 0, configDeck.CardCount)
 
 	for _, ct := range configDeck.CardTypes {
-		colorIndex := 0
 		for count := ct.Count; count > 0; count-- {
-			if colorIndex > 3 {
-				colorIndex = 0
-			}
-
-			if ct.Color {
-				cards = append(cards, Card{
-					Name:  ct.Name,
-					Color: rgbaColors[colorIndex],
-				})
-				colorIndex++
-			} else {
-				cards = append(cards, Card{
-					Name:  ct.Name,
-					Color: rgbaColors[4],
-				})
+			for c, rgb := range rgbaColors {
+				if ct.Color {
+					cards = append(cards, Card{
+						Name:  ct.Name,
+						Color: Color{
+							Name: c,
+							Color: rgb,
+					},
+						Score: ct.Score,
+					})
+				} else {
+					cards = append(cards, Card{
+						Name:  ct.Name,
+						Color: Color{
+							Name: "none",
+							Color:rgbaColors["none"],
+						},
+						Score: ct.Score,
+					})
+				}
 			}
 		}
 	}
