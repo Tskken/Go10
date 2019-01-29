@@ -62,7 +62,7 @@ func (Two) Check(hand player.Hand, usWild ...string) bool {
 
 	log.Println(hand)
 
-	pass2, hand := hand.RunCount(3)
+	pass2, hand := hand.RunCount(1, 4)
 
 	log.Println(hand)
 
