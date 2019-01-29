@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Go10/deck"
-	"Go10/phase"
+	"github.com/Tskken/Go10/deck"
+	"github.com/Tskken/Go10/phase"
 	"log"
 )
 
@@ -19,7 +19,7 @@ func main() {
 	for _, p := range phases {
 		hand := make([]deck.Card, 0)
 
-		for i:= 0; i < 10; i++ {
+		for i := 0; i < 10; i++ {
 			hand = append(hand, d.Draw())
 		}
 

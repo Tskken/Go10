@@ -1,7 +1,7 @@
 package player
 
 import (
-	"Go10/deck"
+	"github.com/Tskken/Go10/deck"
 	"log"
 	"sort"
 	"strconv"
@@ -43,16 +43,16 @@ func (h Hand) SetCount(setCount int, usWild ...string) (bool, Hand) {
 	}
 
 	if wCount, ok := cards[deck.Wild]; ok {
-		if usWild != nil && len(usWild) <= wCount{
+		if usWild != nil && len(usWild) <= wCount {
 			for _, u := range usWild {
 				cards[u]++
 				wCount--
 			}
 		}
 		if wCount > 0 {
-			for k, count:= range cards {
+			for k, count := range cards {
 				if k != deck.Skip && k != deck.Wild {
-					if count + wCount >= 3 {
+					if count+wCount >= 3 {
 						wUsed := wCount - ((count + wCount) - 3)
 						if wUsed > 0 {
 							cards[k] += wUsed
@@ -103,7 +103,7 @@ func (h Hand) SetCount(setCount int, usWild ...string) (bool, Hand) {
 /*
 	TODO: hand.RunCount()
 		- Finished run check
- */
+*/
 
 func (h Hand) RunCount(runLength int, usWild ...string) (bool, Hand) {
 
@@ -115,12 +115,12 @@ func (h Hand) RunCount(runLength int, usWild ...string) (bool, Hand) {
 	for _, c := range h {
 		iCard, err := strconv.Atoi(c.Name)
 		if err == nil {
-			if iCard == current + 1 {
+			if iCard == current+1 {
 				current++
 				count++
 			} else if iCard != current {
-					current = iCard
-					count = 0
+				current = iCard
+				count = 0
 			}
 		}
 

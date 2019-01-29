@@ -1,13 +1,13 @@
 package phase
 
 import (
-	"Go10/player"
+	"github.com/Tskken/Go10/player"
 )
 
 type Phases []Phasing
 
 func Init() Phases {
-	return []Phasing {
+	return []Phasing{
 		new(One),
 		new(Two),
 		new(Three),
@@ -27,7 +27,7 @@ type One struct{}
 	TODO: One.Check():
 		- Comment code
 		- May be possible to simplify wUsed math
- */
+*/
 func (One) Check(hand player.Hand, usWild ...string) bool {
 	pass, _ := hand.SetCount(2, usWild...)
 
@@ -36,12 +36,11 @@ func (One) Check(hand player.Hand, usWild ...string) bool {
 
 type Two struct{}
 
-
 /*
 	TODO: Two.Check()
 		- Change code to handle 2 different types.
 		- Current setup will make set and run overlap with the same cards which could create issues.
- */
+*/
 func (Two) Check(hand player.Hand, usWild ...string) bool {
 	pass1, hand := hand.SetCount(1, usWild...)
 

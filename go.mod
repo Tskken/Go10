@@ -1,1 +1,1 @@
-module Go10
+module github.com/Tskken/Go10

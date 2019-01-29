@@ -1,7 +1,7 @@
 package phase
 
 import (
-	"Go10/player"
+	"github.com/Tskken/Go10/player"
 )
 
 type Phasing interface {
