@@ -100,6 +100,11 @@ func (h Hand) SetCount(setCount int, usWild ...string) (bool, Hand) {
 	return false, nil
 }
 
+/*
+	TODO: hand.RunCount()
+		- Finished run check
+ */
+
 func (h Hand) RunCount(runCount, runLength int, usWild ...string) (bool, Hand) {
 
 	sort.Sort(h)
