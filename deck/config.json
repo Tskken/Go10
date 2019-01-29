@@ -1,0 +1,75 @@
+{
+  "CardCount": 110,
+  "CardTypes": [
+    {
+      "Name": "1",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "2",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "3",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "4",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "5",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "6",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "7",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "8",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "9",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "10",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "11",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "12",
+      "Color": true,
+      "Count": 8
+    },
+    {
+      "Name": "wild",
+      "Color": false,
+      "Count": 8
+    },
+    {
+      "Name": "skip",
+      "Color": false,
+      "Count": 4
+    }
+  ]
+}
