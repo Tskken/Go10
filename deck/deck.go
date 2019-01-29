@@ -11,8 +11,8 @@ import (
 )
 
 const (
-	ConfigPath = "../Go10/deck/config.json"
-	ColorPath  = "../Go10/deck/color.json"
+	ConfigPath = "../Go10/configs/DeckConfig.json"
+	ColorPath  = "../Go10/configs/CardColors.json"
 )
 
 type Deck struct {
