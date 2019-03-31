@@ -1,87 +1,124 @@
 {
-  "CardCount": 110,
-  "CardTypes": [
+  "ColorData": [
+    {
+      "Name": "Yellow",
+      "Color": {
+        "R": 255,
+        "G": 255,
+        "B": 0,
+        "A": 100
+      }
+    },
+    {
+      "Name": "Blue",
+      "Color": {
+        "R": 0,
+        "G": 0,
+        "B": 255,
+        "A": 100
+      }
+    },
+    {
+      "Name": "Green",
+      "Color": {
+        "R": 0,
+        "G": 255,
+        "B": 0,
+        "A": 100
+      }
+    },
+    {
+      "Name": "Red",
+      "Color": {
+        "R": 255,
+        "G": 0,
+        "B": 0,
+        "A": 100
+      }
+    }
+  ],
+  "CardData": [
     {
       "Name": "1",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "2",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "3",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "4",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "5",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "6",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "7",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "8",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "9",
-      "Color": true,
+      "HasColor": true,
       "Score": 5,
       "Count": 8
     },
     {
       "Name": "10",
-      "Color": true,
+      "HasColor": true,
       "Score": 10,
       "Count": 8
     },
     {
       "Name": "11",
-      "Color": true,
+      "HasColor": true,
       "Score": 10,
       "Count": 8
     },
     {
       "Name": "12",
-      "Color": true,
+      "HasColor": true,
       "Score": 10,
       "Count": 8
     },
     {
       "Name": "wild",
-      "Color": false,
+      "HasColor": false,
       "Score": 25,
       "Count": 8
     },
     {
       "Name": "skip",
-      "Color": false,
+      "HasColor": false,
       "Score": 15,
       "Count": 4
     }
